@@ -1,0 +1,129 @@
+*{
+	position: relative;
+	box-sizing: border-box;
+}
+body{
+	padding: 0;
+	margin: 0;
+	height: 100%;
+	width: 100%;
+}
+a{
+	text-decoration: none;
+	color: #fff;
+}
+ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+p{
+	line-height: 22px;
+}
+hr{
+	background-color: gray;
+	height: 3px;
+	width: 110%;
+	opacity: 0.7;
+
+	transform: translate(-5%);
+}
+/*表頭設計*/
+.container{
+	width: 100%;
+	height: 70px;
+	background-color: rgba(0,0,0,0.7);
+}
+.header{
+	display: flex;
+	font-family: Arial;
+	font-size: 28px;
+
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+.header >li >a{
+	display: block;
+	line-height: 22px;
+	padding: 24px 20px;
+	margin-right: 5px;
+	letter-spacing: 0.8px;
+}
+.header > li > a:after{
+	content: "";
+	position: absolute;
+	width: 0%;
+	height: 2.5px;
+	background-color: #7ed9b0;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+
+	transition: all 0.2s;
+}
+.header > li:hover > a:after{
+	width: 100%;
+}
+/* 定位 */
+.header > li > a.current:after{width: 100%;}
+
+.wrapper {
+    width: 75%;
+    margin: 50px auto;
+    margin-top: 30px;
+}
+/*圖片、文字排版*/
+.main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 30px;
+}
+.main0{
+	display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.main1 {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
+
+/*超連結之變化*/
+.hy{
+	text-decoration: none;
+	color: #86cfa1;
+}
+/*超連結轉場效果*/
+.hy:hover{
+	color: #609c74;
+	text-decoration: underline;
+}
+
+
+/*字體*/
+.ind{
+	font-size: 20px;
+	font-family: 微軟正黑體;
+}
+
+/*橫軸-直線*/
+.sub{
+	color: gray;
+	font-size: 16px;
+	font-family: cursive;
+	opacity: 0.7;	/*透明度*/
+}
+
+/*自傳小框框*/
+.tp{
+	text-align:justify;
+	width: 90%;
+	position: relative;
+	left: 5%;
+	font-family: 微軟正黑體;
+}
